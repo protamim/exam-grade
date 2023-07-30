@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with javaScript</title>
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-[calc(100vh-3.5rem)] flex flex-col items-center justify-center">
+
+<div class="flex flex-col items-center justify-center gap-5 bg-indigo-50 px-10 py-6 rounded-xl">
+    <h2 class="text-2xl mb-3">Find out your or your friend's final exam grade.</h2>
+    <label for="studentName" class="relative block rounded-md border border-gray-200 shadow-sm 
+        focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+        <input type="text" id="studentName" class="peer p-2 border-none bg-transparent placeholder-transparent 
+        focus:border-transparent focus:outline-none focus:ring-0"
+        placeholder="Username" required />
+
+        <span class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-indigo-50 p-0.5 text-xs 
+            text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm 
+            peer-focus:top-0 peer-focus:text-xs"> Student Name
+        </span>
+    </label>
+
+    <label for="totalScores" class="relative block rounded-md border border-gray-200 shadow-sm 
+        focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+        <input type="text" id="totalScores"
+            class="peer border-none p-2 bg-transparent placeholder-transparent focus:border-transparent 
+            focus:outline-none focus:ring-0"
+            placeholder="Username" required />
+
+        <span
+            class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-indigo-50 p-0.5 
+            text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm 
+            peer-focus:top-0 peer-focus:text-xs"> Total Scores
+        </span>
+    </label>
+    <a id="btn" class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium
+     text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring
+    active:bg-indigo-500"> Show Grade
+    </a>
+    <!-- Output -->
+    <p id="print" class="transition-all text-lg"></p>
+</div>  
+
+
+
+
+
+
+
+
+
+
+<script src="problem1.js"></script>
+</body>
+</html>
